@@ -6,4 +6,8 @@
 {% endblock %}
 {% block content %}
     {% for post in posts %}
-        <p style = 'font-family:微软雅黑;
+        <p style = 'font-family:微软雅黑;font-size:14pt;font-weight:bold;'>
+            <a href = '/post/{{post.slug}}'>{{post.title}}</a>
+        </p>
+    {% endfor %}
+{% endblock %}
